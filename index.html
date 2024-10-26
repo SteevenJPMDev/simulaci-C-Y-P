@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Ecosistema</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        canvas {
+            border: 1px solid black;
+            margin: 10px;
+        }
+        #controls {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simulador de Ecosistema</h1>
+    <div id="controls">
+        <button id="start">Iniciar Simulación</button>
+        <button id="pause">Pausar Simulación</button>
+        <button id="add-prey">Agregar Presa</button>
+        <button id="add-predator">Agregar Depredador</button>
+        <p>Población de Presas: <span id="preyCount">0</span></p>
+        <p>Población de Depredadores: <span id="predatorCount">0</span></p>
+    </div>
+    <canvas id="ecosystem" width="800" height="400"></canvas>
+    <canvas id="learningChart" width="800" height="400"></canvas>
+
+    <script src="simulacion.js"></script>
+</body>
+</html>
